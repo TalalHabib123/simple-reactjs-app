@@ -8,8 +8,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm start
-
 FROM nginx:alpine
 
 COPY --from=build /app/build /usr/share/nginx/html
