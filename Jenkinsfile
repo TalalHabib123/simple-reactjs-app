@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Run Docker Image') {
             steps {
-                bat 'docker run -d -p 8080:80 --name Lab10 my-app'
+                bat 'docker run -d -p 3000:3000 --name Lab10 my-app'
             }
         }
         stage('Push Docker Image') {
